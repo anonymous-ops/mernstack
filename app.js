@@ -63,7 +63,7 @@ app.post("/usersms",async(req,res)=>{
     })
     try {
         await user.save();
-        res.redirect("index");
+        res.redirect("/");
     } catch (error) {
         res.send(error)
     }
